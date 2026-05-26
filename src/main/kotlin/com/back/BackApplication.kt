@@ -1,4 +1,4 @@
-package com.back.back
+package com.back
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
