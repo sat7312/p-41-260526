@@ -14,13 +14,13 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 @SpringBootTest
 @ActiveProfiles("test")
 @AutoConfigureMockMvc
-class Back2ApplicationTests {
+class BackApplicationTests {
 
 	@Autowired
 	private lateinit var mvc: MockMvc
 
-	@Test
 	@DisplayName("GET /buckets")
+	@Test
 	fun t1() {
 		val resultActions = mvc
 			.perform(
@@ -33,4 +33,5 @@ class Back2ApplicationTests {
 				status().isOk()
 			}
 	}
+
 }
